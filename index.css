@@ -1,14 +1,14 @@
 *{
-    background-color: #7050cd;
+    background-image: url(https://i.redd.it/fzp2lgtwimu71.jpg);
 }
 
 main {
     display: grid;
     grid-template-areas: 
     "navBar navBar navBar" 
-    "topBar topBar topBar"
-    "info1 list1 img1"
-    "info2 list2 img2"
+    "profile1 profile2 profile3"
+    "introStory list1 img1"
+    "infoLast listLast imgLast"
     "footer footer footer"  ;
 
     gap: 150px;
@@ -22,22 +22,43 @@ header{grid-area: navBar;
     justify-items: center;
     padding: auto;
 }  
-#profile{grid-area: topBar;}
+#profile1{grid-area: profile1;}
+#profile2{grid-area: profile2;}
+#profile3{grid-area: profile3;}
 
-#earlyStory{grid-area: info1;}
+
+#introStory{grid-area: introStory;}
 #earlyStoryPowers{grid-area:list1}
 #earlyImg{
-    width: 600px;
+    width: 300px;
     height:300px;
     grid-area: img1; 
 }
 
-#theEnd{grid-area: info2;}
-#theEndPowers{grid-area: list2;}
+#theEnd{grid-area: infoLast;}
+#theEndPowers{grid-area: listLast;}
 #endImg{
     width: 400px;
     height:400px;
-    grid-area: img2; 
+    grid-area: imgLast; 
+}
+
+
+
+.hyperlink{
+    font-size: large;
+    color: black;
+}
+
+.headShot{
+    border: 5px solid black;
+    border-radius: 50%; 
+    width: 200px;
+    height:200px;
+    background-size: contain;
+    margin-left:auto ;
+    margin-right:auto;
+    display: block;    
 }
 
 footer{grid-area: footer;}
@@ -52,27 +73,11 @@ h1{
 }
 
 
-ol,ul{
-    color: #ffffff;
+ul{
+    color: black;
     padding-left: 50px;
 }
 
 
-
-.hyperlink{
-    font-size: large;
-    color: #312f48;
-}
-
-#profileImg{
-    border: 5px solid black;
-    border-radius: 50%; 
-    width: 200px;
-    height:200px;
-    background-size: contain;
-    margin-left:auto ;
-    margin-right:auto;
-    display: block;    
-}
 
 

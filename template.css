@@ -1,0 +1,80 @@
+*{
+    background-color: white;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "navBar navBar navBar" 
+    "profile profile profile"
+    "introStory list1 img1"
+    "infoLast listLast imgLast"
+    "footer footer footer"  ;
+
+    gap: 150px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 200px 200px 200px;
+    align-items: center;
+    justify-items: center;
+  }
+header{grid-area: navBar;
+    align-items: center;
+    justify-items: center;
+    padding: auto;
+}  
+#profile{grid-area: profile;}
+
+#introStory{grid-area: introStory;}
+#earlyStoryPowers{grid-area:list1}
+#earlyImg{
+    width: 300px;
+    height:300px;
+    grid-area: img1; 
+}
+
+#theEnd{grid-area: infoLast;}
+#theEndPowers{grid-area: listLast;}
+#endImg{
+    width: 400px;
+    height:400px;
+    grid-area: imgLast; 
+}
+
+
+
+.hyperlink{
+    font-size: large;
+    color: black;
+}
+
+#profileImg{
+    border: 5px solid black;
+    border-radius: 50%; 
+    width: 200px;
+    height:200px;
+    background-size: contain;
+    margin-left:auto ;
+    margin-right:auto;
+    display: block;    
+}
+
+footer{grid-area: footer;}
+
+h1,h2,h3,h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+ul{
+    color: black;
+    padding-left: 50px;
+}
+
+
+
+
